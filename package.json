@@ -74,6 +74,7 @@
     "webpack": "^4.46.x"
   },
   "componentConfig": {
-    "isComponentLibrary": true
+    "isComponentLibrary": true,
+    "materialSchema": "https://unpkg.com/your-material-name@0.1.0/build/lowcode/assets-prod.json"
   }
 }

@@ -4,6 +4,9 @@ export { default as ColorfulButton } from './components/colorful-button';
 export type { ColorfulInputProps } from './components/colorful-input';
 export { default as ColorfulInput } from './components/colorful-input';
 
+export { default as GateButton } from './components/gate-button/gate-button';
+
+
 const bizCssPrefix = 'bizpack';
 
 export {

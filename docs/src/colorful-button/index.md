@@ -6,16 +6,16 @@
 
 ```tsx
 import React from 'react';
-import { ColorfulButton } from 'your-material-name';
+import { GateButton } from 'your-material-name';
 
 
 export default () => {
   return <div>
-    <ColorfulButton color="red"/>
+    <GateButton color="red"/>
   </div>
 };
 ```
 
 ## API
 
-<API hideTitle  src="@/components/colorful-button/colorful-button.tsx" />
+<API hideTitle  src="@/components/colorful-button/gate-button.tsx" />
