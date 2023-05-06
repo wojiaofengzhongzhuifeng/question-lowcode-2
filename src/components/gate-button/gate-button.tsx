@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { createElement } from 'react';
 import './index.scss';
 
 
@@ -23,7 +22,11 @@ const GateButton: React.FC<GateButtonProps> = function ColorfulButton({
 }) {
 
   return (
-    <div >gate button 2023年05月05日18:12:13</div>
+    // todo 删除 @ts-ignore
+    // @ts-ignore
+    <>
+      <div >gate button 2023年05月05日18:12:13</div>
+    </>
   );
 };
 

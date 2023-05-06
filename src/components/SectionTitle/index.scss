@@ -1,0 +1,33 @@
+.section-title {
+  font-weight: 600;
+  font-size: 32rem;
+  line-height: 120%;
+  color: #04091A;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+}
+
+.align-left {
+  justify-content: flex-start;
+}
+.align-right {
+  justify-content: flex-end;
+}
+.align-center {
+  justify-content: center;
+}
+
+.classic-dark{
+  .section-title {
+    color: #FFFFFF;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 24px;
+  }
+}
+
