@@ -8,13 +8,21 @@ export { default as GateButton } from './components/gate-button/gate-button';
 
 export { default as FAQS } from './components/FAQs/index';
 
+import AltStringSetter from './setter/input-setter';
+import FAQInputSetter from "./setter/faq-input-setter";
 
-console.log(123321);
+
 init()
 
 function init(){
-  console.log("init");
-  window.g_lang = "fjdklasjfkdlasj"
+  registerCustomSetter()
+}
+
+function registerCustomSetter(){
+  const registerSetter = window.AliLowCodeEngine.setters.registerSetter;
+  registerSetter('AltStringSetter', AltStringSetter);
+  registerSetter('FAQInputSetter', FAQInputSetter);
+
 }
 
 const bizCssPrefix = 'bizpack';

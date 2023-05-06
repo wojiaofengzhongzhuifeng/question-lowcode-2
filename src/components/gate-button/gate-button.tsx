@@ -17,15 +17,15 @@ const GateButton: React.FC<GateButtonProps> = function ColorfulButton({
   type = 'primary',
   color,
   style = {},
-  content1111 ="initial value",
+  content1111,
   ...otherProps
 }) {
-
+  console.log('content1111', content1111);
   return (
     // todo 删除 @ts-ignore
     // @ts-ignore
     <>
-      <div >gate button 2023年05月05日18:12:13</div>
+      <div >gate button {content1111}</div>
     </>
   );
 };

@@ -9,21 +9,26 @@ import SectionTitle from "../SectionTitle/index.js";
 
 // const createPortal = ReactDOM.createPortal
 
+export type FAQItemProps = {title: string, contentList: string[], isShow: boolean}
+
 export interface FAQSProps{
   title?: string,
-  FaqList: {title: string, contentList: string[], isShow: boolean}[],
+  FaqList: FAQItemProps[],
   isDark?:boolean,
   id?: string
 }
 
-const initialFaqList = [
+export const initialFAQTitle = 'faq title'
+export const initialFaqList = [
 
   {
     title:'Is GBTC a good investment, especially when it is trading at a discount to NAV?',
     contentList: [
-      'GBTC shares do allow investors to have exposure to Bitcoin while bypassing certain challenges such as storage, security and insurance, as well as legal compliance in the case of US investors. However, steep discount to NAV also meant that GBTC shareholders are likely to be in the state of panic or fear. With recent attacks towards the Grayscale management, such added variable to the already volatile Bitcoin price movement may increase the risk for new investors to Bitcoin and cryptocurrencies.'
+      'GBTC shares do allow investors to have exposure to Bitcoin while bypassing certain challenges such as storage, security and insurance, as well as legal compliance in the case of US investors. However, steep discount to NAV also meant that GBTC shareholders are likely to be in the state of panic or fear. With recent attacks towards the Grayscale management, such added variable to the already volatile Bitcoin price movement may increase the risk for new investors to Bitcoin and cryptocurrencies.',
+      'other GBTC shares do allow investors to have exposure to Bitcoin while bypassing certain challenges such as storage, security and insurance, as well as legal compliance in the case of US investors. However, steep discount to NAV also meant that GBTC shareholders are likely to be in the state of panic or fear. With recent attacks towards the Grayscale management, such added variable to the already volatile Bitcoin price movement may increase the risk for new investors to Bitcoin and cryptocurrencies.'
+
     ],
-    isShow: false
+    isShow: true
   },
   {
     title: 'How to choose between GBTC and spot Bitcoin?',
@@ -50,10 +55,11 @@ const initialFaqList = [
 
 
 
+
 const FAQS: React.FC<FAQSProps> = function ({
-  title = "faq title",
+  title = initialFAQTitle,
   FaqList = initialFaqList,
-  isDark = true,
+  isDark = false,
   id = 'test'
 }) {
 
