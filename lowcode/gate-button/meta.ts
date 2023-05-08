@@ -8,7 +8,7 @@ const GateButtonMeta: ComponentMetadata = {
   "screenshot": "",
   "devMode": "proCode",
   "npm": {
-    "package": "your-material-name",
+    "package": "gate-lowcode-component",
     "version": "0.1.0",
     "exportName": "GateButton",
     "main": "src/index.tsx",

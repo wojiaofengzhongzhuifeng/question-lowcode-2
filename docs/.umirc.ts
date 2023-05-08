@@ -7,7 +7,7 @@ const { version } = JSON.parse(fs.readFileSync(join(__dirname, '../package.json'
 const productStyles =
   '.__dumi-default-menu{display:none} .__dumi-default-layout{padding-left:58px!important}';
 
-const productPath = `/your-material-name@${version}/build/docs/`;
+const productPath = `/gate-lowcode-component@${version}/build/docs/`;
 
 export default defineConfig({
   // other config entry
@@ -24,7 +24,7 @@ export default defineConfig({
     // 配置文件import alias
     memo.resolve.alias.set('@', join(__dirname, '../src'));
     memo.resolve.alias.set('@components', join(__dirname, '../src/components'));
-    memo.resolve.alias.set('your-material-name', join(__dirname, '../src'));
+    memo.resolve.alias.set('gate-lowcode-component', join(__dirname, '../src'));
   },
   logo: 'https://fusion.alicdn.com/images/jdSvK6gaqaWB.png',
   exportStatic: process.env.NODE_ENV === 'production' ? { htmlSuffix: true } : {},
@@ -39,7 +39,7 @@ export default defineConfig({
   alias: {
     '@': join(__dirname, '../src'),
     '@components': join(__dirname, '../src/components'),
-    'your-material-name': join(__dirname, '../src'),
+    'gate-lowcode-component': join(__dirname, '../src'),
   },
   apiParser: {
     propFilter: (prop) => {

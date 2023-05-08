@@ -9,7 +9,7 @@ const FAQSMeta: ComponentMetadata = {
   "screenshot": "",
   "devMode": "proCode",
   "npm": {
-    "package": "your-material-name",
+    "package": "gate-lowcode-component",
     "version": "0.1.0",
     "exportName": "FAQS",
     "main": "src/index.tsx",
