@@ -1,5 +1,5 @@
 {
-  "library": "BizComps",
+  "library": "gate-lowcode-component",
   "libraryTarget": "umd",
   "sourceMap": true,
   "alias": {
