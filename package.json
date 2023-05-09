@@ -1,6 +1,6 @@
 {
   "name": "gate-lowcode-component",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "gate-lowcode-component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -76,7 +76,7 @@
   },
   "componentConfig": {
     "isComponentLibrary": true,
-    "materialSchema": "https://unpkg.com/gate-lowcode-component@0.1.3/build/lowcode/assets-prod.json"
+    "materialSchema": "https://unpkg.com/gate-lowcode-component@0.1.9/build/lowcode/assets-prod.json"
   },
-  "homepage": "https://unpkg.com/gate-lowcode-component@0.1.3/build/index.html"
+  "homepage": "https://unpkg.com/gate-lowcode-component@0.1.9/build/index.html"
 }
